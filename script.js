@@ -24,4 +24,24 @@ var acceptUpper = confirm("Do you like to have Upper case letters in your passwo
 var acceptLower = confirm("Do you like to have Lower case letters in your password?")
 var acceptNumbers = confirm("Do you like to have Numbers in your password?")
 var acceptSpecial = confirm("Do you like to have Special Characters in your password?")
+var userChoice = ""
+if(acceptUpper){
+  userChoice += "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+}
+if(acceptLower){
+  userChoice += "abcdefghijklmnopqrstuvwxyz"
+}
+if(acceptUpper){
+  userChoice += "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+}
+if(acceptNumbers){
+  userChoice += "123456789"
+}
+if(acceptSpecial){
+  userChoice += "!@#$%^&*()"
+}
+if(userChoice.length === 0){
+  return "Please select atleast one option"
+}
+console.log(userChoice)
 }

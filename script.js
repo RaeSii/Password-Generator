@@ -44,4 +44,11 @@ if(userChoice.length === 0){
   return "Please select atleast one option"
 }
 console.log(userChoice)
+var password = ""
+for(let i=0;i<passwordLength;i++){
+   var index =  Math.floor(Math.random() * userChoice.length)
+   password += userChoice [index]
+}
+console.log(password)
+return password
 }
